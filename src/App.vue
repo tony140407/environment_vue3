@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -28,3 +28,11 @@
   }
 }
 </style>
+<script>
+export default {
+  mounted: () => {
+    const test = 'test eslint~~';
+    console.log(test);
+  }
+};
+</script>
