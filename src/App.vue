@@ -33,6 +33,9 @@ export default {
   mounted: () => {
     const test = 'test eslint~~';
     console.log(test);
-  }
+    const a = (asf) => asf;
+    const b = a('123');
+    console.log(b);
+  },
 };
 </script>
