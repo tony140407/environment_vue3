@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view />
+  <router-view data-aos="flip-up" data-aos-duration="1000" />
 </template>
 
 <style lang="scss">
@@ -29,13 +29,15 @@
 }
 </style>
 <script>
+import AOS from 'aos';
+
 export default {
+  setup: () => {
+    AOS.init();
+  },
   mounted: () => {
     const test = 'test eslint~~';
     console.log(test);
-    const a = (asf) => asf;
-    const b = a('123');
-    console.log(b);
   },
 };
 </script>
