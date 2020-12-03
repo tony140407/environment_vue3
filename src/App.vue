@@ -1,6 +1,10 @@
 <template>
   <div id="nav" class="container">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">
+      <font-awesome-icon icon="user-secret" />
+      Home
+    </router-link>
+    |
     <router-link to="/about">About</router-link>
   </div>
   <router-view data-aos="flip-up" data-aos-duration="1000" />
